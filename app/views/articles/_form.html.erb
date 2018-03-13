@@ -1,0 +1,8 @@
+<%= @article.title %>
+<%= form_for @article, class: "form-inline" do |a| %>
+  <%= a.label :title, "Title" %>
+  <%= a.text_field :title %>
+  <%= a.label :content, "Content" %>
+  <%= a.text_field :content %>
+  <%= a.submit "submit", class: "btn btn-primary"%>
+<% end %>
